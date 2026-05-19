@@ -57,41 +57,13 @@ a {
 .brand {
   align-items: center;
   display: inline-flex;
-  gap: 14px;
   min-width: 210px;
 }
 
-.brand-mark {
-  align-items: center;
-  border: 1px solid var(--gold);
-  color: var(--gold-light);
-  display: inline-flex;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 24px;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  width: 48px;
-}
-
-.brand-copy span,
-.brand-copy small {
-  display: block;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.brand-copy span {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 22px;
-  letter-spacing: 0;
-}
-
-.brand-copy small {
-  color: var(--gold);
-  font-size: 11px;
-  font-weight: 700;
-  margin-top: 5px;
+.brand img {
+  height: 76px;
+  object-fit: contain;
+  width: auto;
 }
 
 .nav-links {
@@ -506,14 +478,8 @@ textarea:focus {
     min-width: 0;
   }
 
-  .brand-mark {
-    font-size: 19px;
-    height: 40px;
-    width: 40px;
-  }
-
-  .brand-copy span {
-    font-size: 18px;
+  .brand img {
+    height: 52px;
   }
 
   .header-cta {
