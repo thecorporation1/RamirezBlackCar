@@ -141,6 +141,12 @@ a {
   color: var(--text);
 }
 
+.btn.whatsapp {
+  background: #f6f0e7;
+  border-color: rgba(246, 240, 231, 0.72);
+  color: #080807;
+}
+
 .hero {
   align-items: end;
   display: grid;

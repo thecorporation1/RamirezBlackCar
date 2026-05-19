@@ -1,4 +1,4 @@
-const whatsappNumber = "17865995573";
+const contactEmail = "liosbelramirez83@gmail.com";
 
 const form = document.querySelector("#bookingForm");
 
@@ -6,7 +6,8 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const data = new FormData(form);
-  const message = [
+  const subject = "Solicitud de reserva - Ramirez Black Car";
+  const body = [
     "Hola Ramirez Black Car, quiero solicitar disponibilidad.",
     "",
     `Nombre: ${data.get("name")}`,
@@ -16,6 +17,5 @@ form.addEventListener("submit", (event) => {
     `Detalles: ${data.get("details")}`,
   ].join("\n");
 
-  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank", "noopener,noreferrer");
+  window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
